@@ -1,6 +1,3 @@
-proxy_cache off;
-proxy_buffering off;
-
 upstream backend {
     server $UPSTREAM_URL;
 }
