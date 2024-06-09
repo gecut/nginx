@@ -1,11 +1,4 @@
-# Define caching zone
-proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=cards:10m max_size=10g inactive=60m use_temp_path=off;
-
-# Define proxy settings
-proxy_cache cards;
-proxy_cache_valid 200 302 10m; # Cache successful responses for 10 minutes
-proxy_cache_valid 404 1m; # Cache 404 errors for 1 minute
-proxy_cache_use_stale error timeout updating http_500 http_502 http_503 http_504;
+proxy_cache off;
 proxy_buffering off;
 
 upstream backend {

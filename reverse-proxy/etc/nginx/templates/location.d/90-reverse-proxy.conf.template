@@ -3,8 +3,4 @@ location / {
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
     proxy_cache_bypass $http_upgrade;
-
-    # Enable caching for this location
-    proxy_cache cards;
-    proxy_cache_key $request_uri;
 }
