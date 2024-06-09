@@ -1,0 +1,56 @@
+{
+  "npm.packageManager": "yarn",
+  "editor.wordWrapColumn": 120,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.useEditorConfig": true,
+  "files.exclude": {
+    "**/*.map": true,
+    "**/*.d.ts": true,
+    "**/*.tsbuildinfo": true
+  },
+  "files.associations": {
+    "*.mt": "routeros",
+    "*.conf.template": "nginx",
+    "ssh_config": "ssh_config",
+    "*.njk": "html",
+    "ssh-config": "ssh_config"
+  },
+  "markdownlint.ignore": ["**/CHANGELOG.md"],
+  "cSpell.language": "en,fa,fa-IR",
+  "cSpell.words": [
+    "adminjs",
+    "Alwatr",
+    "Darkube",
+    "gecut",
+    "hamravesh",
+    "hono",
+    "iban",
+    "kartbook",
+    "Kavenegar",
+    "trpc",
+    "Zamanian"
+  ],
+  "git.autoStash": true,
+  "git.branchProtection": ["main", "next"],
+  "githubPullRequests.ignoredPullRequestBranches": ["main", "next"],
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": false,
+  "yaml.schemas": {
+    "https://www.artillery.io/schema.json": [
+      "file:///home/mm25zamanian/Codes/kartbook/packages/card-app/test.artillery.yml",
+      "file:///home/mm25zamanian/Codes/kartbook/tests/card.app.artillery.yml",
+      "file:///home/mm25zamanian/Codes/kartbook/tests/card.api.artillery.yml"
+    ]
+  },
+  "[nginx]": {
+    "editor.defaultFormatter": "raynigon.nginx-formatter"
+  }
+}
